@@ -1,4 +1,4 @@
-Credit Card Analysis Dashboard
+
 💳 Credit Card Analysis Dashboard
 
 An end-to-end Business Intelligence project combining SQL-based data modeling and Power BI visualization to analyze 667K+ credit card transactions and customer demographic records, uncovering actionable insights into spending patterns, revenue drivers, and customer profitability.
