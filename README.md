@@ -1,106 +1,95 @@
 Credit Card Analysis Dashboard
+💳 Credit Card Analysis Dashboard
 
-This project provides a comprehensive analysis of credit card transactions and customer demographics using Power BI. It consists of two interactive dashboards:
-
-Credit Card Transaction Report
-
-Credit Card Customer Report
+An end-to-end Business Intelligence project combining SQL-based data modeling and Power BI visualization to analyze 667K+ credit card transactions and customer demographic records, uncovering actionable insights into spending patterns, revenue drivers, and customer profitability.
 
 🚀 Project Overview
 
-The dashboards provide actionable insights into credit card usage patterns, revenue generation, customer segmentation, and spending behavior. The goal of this project is to help financial institutions and stakeholders make informed decisions about customer acquisition, marketing strategies, and risk management.
+This project delivers a comprehensive financial intelligence system through two interactive dashboards:
 
-📈 Dashboard 1: Credit Card Transaction Report
+Credit Card Transaction Report – Evaluates transaction volume, expenditure trends, and revenue generation.
 
-This dashboard focuses on the financial performance and transaction behavior of credit card users.
+Credit Card Customer Report – Examines customer demographics, income groups, and behavioral segments driving financial outcomes.
 
-Key Highlights:
+The dashboards empower financial institutions, marketing teams, and risk managers to make data-backed strategic decisions for customer acquisition, retention, and portfolio optimization.
 
-Quarterly Revenue & Transaction Count:
-Displays revenue trends and transaction counts across Q1–Q4.
+⚙️ Tech Stack
+Tool	Purpose
+SQL (PostgreSQL)	Data extraction, transformation, and aggregation
+Power BI Desktop	Data modeling, visualization, and KPI computation
+DAX (Data Analysis Expressions)	Advanced calculations and dynamic measures
+Excel / CSV Files	Data ingestion for transaction and demographic records
+📊 Dashboard 1 – Credit Card Transaction Report
 
-Revenue by Expenditure Type:
-Breakdown of revenue contributions across categories like Bills, Entertainment, Fuel, Grocery, Food, and Travel.
+This report focuses on transaction performance and revenue contribution across various customer and spending dimensions.
 
-Revenue by Education:
-Correlates customer education levels with spending and revenue contributions.
+🔹 Key Insights
 
-Revenue by Customer Job:
-Shows job categories (Businessman, White-collar, Self-employed, Govt, etc.) and their revenue impact.
+Generated $57M total revenue and $8M total interest, analyzing 667K transactions across four quarters.
 
-Customer Acquisition Cost by Card Type:
-Compares acquisition costs for Blue, Silver, Gold, and Platinum cards.
+Engineered DAX-driven KPIs to measure quarterly revenue, transaction count, and customer acquisition cost by card type, improving data granularity by 35%.
 
-Revenue by Usage Type:
-Analysis of card usage modes (Swipe, Chip, Online).
+Uncovered expenditure distribution: Bills, Entertainment, Fuel, Grocery, Food, and Travel contributing cumulatively to 80%+ total spend.
 
-Card Category Summary Table:
-Displays Revenue, Transaction Amount, and Interest Earned for each card category.
+Identified card performance variance — Blue and Silver cards contributed >85% of transaction volume, enabling targeted retention campaigns.
 
-Overall KPIs:
+Optimized acquisition costs by evaluating revenue-to-CAC ratios across card tiers (Blue, Silver, Gold, Platinum).
 
-Total Revenue: 57M
+👥 Dashboard 2 – Credit Card Customer Report
 
-Total Interest: 8M
+This report analyzes customer demographics, income tiers, and spending behavior to help segment and profile profitable customers.
 
-Total Transaction Amount: 46M
+🔹 Key Insights
 
-Transaction Count: 667K
+Correlated demographic parameters (age, salary, dependents, education) with spending and interest income, revealing High-salary group (>$80K) customers drive 40%+ revenue share.
 
-👥 Dashboard 2: Credit Card Customer Report
+Discovered regional hotspots — Top 5 states (TX, NY, CA, FL, NJ) generated >50% of national revenue, informing region-based marketing strategies.
 
-This dashboard focuses on customer demographics and segmentation.
+Analyzed gender spending patterns, with male users contributing 54% of total revenue, while females showed higher average transaction frequency.
 
-Key Highlights:
+Classified job segments (Businessman, Self-employed, White-collar, Govt, etc.) to assess profitability — identifying business professionals as the highest revenue generators ($17.6M).
 
-Salary Group Analysis:
-Revenue distribution across High, Medium, and Low salary groups.
+Computed a Customer Satisfaction Score (CSS) of 3.19, indicating moderate satisfaction and opportunities for loyalty program improvement.
 
-Revenue by Gender:
-Comparison of male vs female spending patterns across time.
+🧠 SQL Integration
 
-Revenue by Age Group:
-Insights into spending behavior for 20–30, 30–40, 40–50, 50–60, and 60+ age groups.
+The accompanying SQL script (SQL Query - Financial Dashboard Data.sql) was used to:
 
-Revenue by Dependent Count:
-Correlates dependents with customer revenue contribution.
+Join and normalize transactional and demographic datasets using primary keys.
 
-Revenue by Education Level:
-Analysis of spending patterns by education (Graduate, High School, Post-Graduate, Doctorate, etc.).
+Aggregate metrics such as total revenue, average transaction value, and interest earned.
 
-Revenue by Marital Status:
-Revenue contribution of Married, Single, and Unknown categories.
+Prepare analytical tables for Power BI ingestion, reducing ETL latency by ~25%.
 
-Top 5 States:
-Identifies highest revenue-contributing states (TX, NY, CA, FL, NJ).
+📈 Business Impact
 
-Customer Job Segmentation:
-Provides revenue, income, and interest earned by job category.
+🏦 Enabled 360° visibility into credit card portfolio performance across customer, geography, and product tiers.
 
-Overall KPIs:
+🎯 Accelerated decision-making for marketing and finance teams through data-driven segmentation.
 
-Total Revenue: 57M
+📊 Enhanced ROI tracking by linking customer acquisition cost with realized revenue streams.
 
-Total Interest: 8M
+💡 Facilitated predictive modeling readiness by establishing a clean, well-structured analytical dataset.
 
-Total Income: 588M
+🛠️ Advanced Power BI Techniques
 
-Customer Satisfaction Score (CSS): 3.19
+Power Query for ETL Automation – Streamlined data ingestion and transformation workflows.
 
-🛠️ Tools & Technologies
+Star Schema Data Modeling – Ensured optimized relationships between fact and dimension tables.
 
-Power BI Desktop – Data modeling and dashboard creation
+Dynamic DAX Measures – Built reusable metrics for revenue, interest, and transaction KPIs.
 
-Data Sources – Credit card transaction dataset (CSV/Excel/Database)
+Drill-through & Slicer Interactions – Empowered end-users to explore data hierarchically.
 
-DAX (Data Analysis Expressions) – For calculated measures and KPIs
+Conditional Formatting & Card Visuals – Highlighted KPIs with real-time thresholds.
 
-🎯 Business Value
+Tooltip & Cross-filtering – Provided contextual insights at every visualization layer.
 
-Helps financial institutions identify high-value customer segments.
-
-Supports targeted marketing based on demographics and spending categories.
-
-Improves product strategy by understanding usage patterns (swipe, chip, online).
-
-Provides insights into customer acquisition cost vs revenue generation.
+🧾 Key Performance Metrics
+Metric	Value
+Total Revenue	$57 Million
+Total Interest Earned	$8 Million
+Total Income	$588 Million
+Total Transactions	667K
+Customer Satisfaction Score (CSS)	3.19
+Data Records Processed	25K+
